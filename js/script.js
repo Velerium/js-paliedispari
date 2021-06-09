@@ -50,6 +50,9 @@ var winner = document.getElementById('winner');
 
 function numberGame() { //Triggered only by button.
 
+    short2.innerHTML = '';
+    short3.innerHTML = '';
+
     if (choices[0].checked === false && choices[1].checked === false) {
         winner.innerHTML = 'Please select a choice!'
         return;
