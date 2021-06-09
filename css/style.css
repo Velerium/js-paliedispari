@@ -73,6 +73,27 @@ body {
     font-size: 18px;
 }
 
+.choice {
+    display: flex;
+    flex-direction: column;
+}
+
+.choice > div:first-child {
+    margin-bottom: 30px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.choice, .game {
+    margin-top: -30px;
+}
+
+.pick {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px; 
+}
+
 .buttons {
     display: flex;
     justify-content: space-evenly;
@@ -103,6 +124,6 @@ button {
     justify-content: space-around;
 }
 
-.game div {
+.game > div {
     width: 45%;
 }
