@@ -58,7 +58,12 @@ function numberGame() { //Triggered only by button.
     var playerNumber = parseInt(prompt('Pick a number from 1 to 5!'));
 
     if (playerNumber < 1 || playerNumber > 5) {
-        winner.innerHTML = 'Please pick a number between 1 and 5.'
+        alert('Please pick a number between 1 and 5.')
+        winner.innerHTML = 'Please try again.'
+        return;
+    } else if (isNaN(playerNumber)) {
+        alert('Please insert a number!');
+        winner.innerHTML = 'Please try again.'
         return;
     }
 
