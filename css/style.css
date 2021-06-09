@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #bbb;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column ;
+    width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #fff;
+    justify-content: center;
+}
+
+.small-container {
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0;
+    background-color: wheat;
+}
+
+.smaller-container {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ad {
+    width: 20%;
+    height: 80%;
+    background-color: #fff;
+    margin: 20px;
+    position: relative;
+}
+
+.ad span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.logo h3 {
+    margin-top: 20px;
+}
+
+#output-pal, #output-player, #output-cpu, #winner {
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+#winner, #underline {
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+#userWord {
+    font-size: 18px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.buttons h3 {
+    line-height: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: initial;
+    width: 35%;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.buttons > button {
+    width: 35%;
+}
+
+.game {
+    display: flex;
+    justify-content: space-around;
+}
+
+.game div {
+    width: 45%;
+}
